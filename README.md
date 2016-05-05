@@ -7,13 +7,13 @@ A container view controller with segmented control. It changes content view cont
 ## Major features
 
 ### Select content view controller with segmented control
-!
+![](https://github.com/Silence-GitHub/SWSegmentedController/blob/master/README_resources/Select_content_view_controller_with_segmented_control.gif)
 
 ### Select content view controller programmatically
-!
+![](https://github.com/Silence-GitHub/SWSegmentedController/blob/master/README_resources/Select_content_view_controller_programmatically.gif)
 
 ### Set content view controllers
-!
+![](https://github.com/Silence-GitHub/SWSegmentedController/blob/master/README_resources/Set_content_view_controllers.gif)
 
 
 
