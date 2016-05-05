@@ -85,19 +85,23 @@ const static CGFloat SEGMENTED_CONTROL_TOP_BOTTOM_SPACE = 8.0f;
 
 #pragma mark - View controller life cycle
 
-- (instancetype)initWithControllers:(NSArray *)controllers {
-    self = [[SWSegmentedController alloc] init];
-    if (self) {
-        if (controllers.count < 2) {
-            NSLog(@"Number of controllers of SWSegmentedController must >= 2. Now count = %lu", (unsigned long)controllers.count);
+- (instancetype)initWithControllers:(NSArray<__kindof UIViewController *> *)controllers {
+    // Check whether number of controllers is enough
+    if (controllers.count < 2) {
+        NSLog(@"Number of controllers of SWSegmentedController must >= 2. Now count = %lu", (unsigned long)controllers.count);
+        return nil;
+    }
+    // Check type of controller
+    for (id vc in controllers) {
+        if (![vc isKindOfClass:[UIViewController class]]) {
+            NSLog(@"Controllers of SWSegmentedController must contain UIViewController class type or its subclass type. Now controllers has a object with class: %@", [vc class]);
             return nil;
         }
-        for (id vc in controllers) {
-            if (![vc isKindOfClass:[UIViewController class]]) {
-                NSLog(@"Controllers of SWSegmentedController must contain UIViewController class type or its subclass type. Now controllers has a object with class: %@", [vc class]);
-                return nil;
-            }
-        }
+    }
+    
+    // Init
+    self = [super init];
+    if (self) {
         _viewControllers = controllers;
         _selectedIndex = 0;
         [self displayViewController:controllers.firstObject];

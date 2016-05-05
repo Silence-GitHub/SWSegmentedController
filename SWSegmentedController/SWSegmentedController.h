@@ -11,12 +11,12 @@
 @interface SWSegmentedController : UIViewController
 
 @property (nonatomic, strong, readonly) UISegmentedControl *segmentedControl;
-@property (nonatomic, copy) NSArray <__kindof UIViewController *> *viewControllers;
+@property (nonatomic, copy) NSArray<__kindof UIViewController *> *viewControllers;
 @property (nonatomic) NSInteger selectedIndex;
 @property (nonatomic, strong, readonly) UIViewController *contentViewController; // view controller displaying content
 @property (nonatomic, strong, readonly) UIView *contentView; // for content view controller
 
-- (instancetype)initWithControllers:(NSArray *)controllers;
+- (instancetype)initWithControllers:(NSArray<__kindof UIViewController *> *)controllers;
 
 @end
 
