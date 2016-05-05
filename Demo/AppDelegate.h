@@ -2,7 +2,7 @@
 //  AppDelegate.h
 //  SWSegmentedController
 //
-//  Created by 陆凯波 on 16/5/4.
+//  Created by Kaibo Lu on 16/5/4.
 //  Copyright © 2016年 Kaibo Lu. All rights reserved.
 //
 
