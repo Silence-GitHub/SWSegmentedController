@@ -141,7 +141,7 @@ const static CGFloat SEGMENTED_CONTROL_TOP_BOTTOM_SPACE = 8.0f;
 
 - (CGRect)frameForContentController {
     CGFloat y = CGRectGetMaxY(self.segmentedControl.frame) + SEGMENTED_CONTROL_TOP_BOTTOM_SPACE;
-    return CGRectMake(0, y, self.view.bounds.size.width, self.view.bounds.size.height - y);
+    return CGRectMake(0, y, self.view.bounds.size.width, self.view.bounds.size.height - [self.bottomLayoutGuide length] - y);
 }
 
 - (void)hideViewController:(UIViewController *)controller {
