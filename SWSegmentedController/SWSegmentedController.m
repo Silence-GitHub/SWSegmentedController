@@ -44,7 +44,7 @@ const static CGFloat SEGMENTED_CONTROL_TOP_BOTTOM_SPACE = 8.0f;
     _selectedIndex = _segmentedControl.selectedSegmentIndex;
 }
 
-- (void)setSelectedIndex:(NSInteger)selectedIndex {
+- (void)setSelectedIndex:(NSUInteger)selectedIndex {
     if (selectedIndex >= self.viewControllers.count) {
         NSLog(@"SWSegmentedController selected index (%ld) must < number of view controllers (%lu)", (long)selectedIndex, (unsigned long)self.viewControllers.count);
         return;
@@ -104,7 +104,6 @@ const static CGFloat SEGMENTED_CONTROL_TOP_BOTTOM_SPACE = 8.0f;
     if (self) {
         _viewControllers = controllers;
         _selectedIndex = 0;
-        [self displayViewController:controllers.firstObject];
     }
     return self;
 }
@@ -113,6 +112,8 @@ const static CGFloat SEGMENTED_CONTROL_TOP_BOTTOM_SPACE = 8.0f;
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    [self displayViewController:_viewControllers.firstObject];
 }
 
 - (void)viewWillLayoutSubviews {

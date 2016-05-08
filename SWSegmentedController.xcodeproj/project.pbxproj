@@ -11,7 +11,6 @@
 		4A8D85EA1CDB274C00208FEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A8D85D91CDB274C00208FEC /* Assets.xcassets */; };
 		4A8D85EB1CDB274C00208FEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A8D85DA1CDB274C00208FEC /* LaunchScreen.storyboard */; };
 		4A8D85EC1CDB274C00208FEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A8D85DC1CDB274C00208FEC /* Main.storyboard */; };
-		4A8D85ED1CDB274C00208FEC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A8D85DE1CDB274C00208FEC /* Info.plist */; };
 		4A8D85EE1CDB274C00208FEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8D85DF1CDB274C00208FEC /* main.m */; };
 		4A8D85EF1CDB274C00208FEC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8D85E11CDB274C00208FEC /* ViewController.m */; };
 		4A8D85F01CDB274C00208FEC /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8D85E31CDB274C00208FEC /* ViewController1.m */; };
@@ -20,7 +19,6 @@
 		4A8D85F91CDB74AB00208FEC /* Select_content_view_controller_programmatically.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4A8D85F51CDB74AB00208FEC /* Select_content_view_controller_programmatically.gif */; };
 		4A8D85FA1CDB74AB00208FEC /* Select_content_view_controller_with_segmented_control.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4A8D85F61CDB74AB00208FEC /* Select_content_view_controller_with_segmented_control.gif */; };
 		4A8D85FB1CDB74AB00208FEC /* Set_content_view_controllers.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4A8D85F71CDB74AB00208FEC /* Set_content_view_controllers.gif */; };
-		4A8D85FC1CDB74AB00208FEC /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 4A8D85F81CDB74AB00208FEC /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -182,7 +180,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A8D85FA1CDB74AB00208FEC /* Select_content_view_controller_with_segmented_control.gif in Resources */,
-				4A8D85ED1CDB274C00208FEC /* Info.plist in Resources */,
 				4A8D85F91CDB74AB00208FEC /* Select_content_view_controller_programmatically.gif in Resources */,
 				4A8D85FB1CDB74AB00208FEC /* Set_content_view_controllers.gif in Resources */,
 				4A8D85EC1CDB274C00208FEC /* Main.storyboard in Resources */,
@@ -201,7 +198,6 @@
 				4A8D85F01CDB274C00208FEC /* ViewController1.m in Sources */,
 				4A8D85EF1CDB274C00208FEC /* ViewController.m in Sources */,
 				4A8D85F11CDB274C00208FEC /* ViewController2.m in Sources */,
-				4A8D85FC1CDB74AB00208FEC /* README.md in Sources */,
 				4A8D85EE1CDB274C00208FEC /* main.m in Sources */,
 				4A8D85F21CDB274C00208FEC /* SWSegmentedController.m in Sources */,
 				4A8D85E91CDB274C00208FEC /* AppDelegate.m in Sources */,
